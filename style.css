@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+#board{
+  
+    box-shadow: rgba(254, 3, 3, 0.955) 0px 22px 70px 4px;
+}
+span{
+    font-size: larger;
+
+}
