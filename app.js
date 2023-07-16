@@ -54,22 +54,12 @@ function update() {
     }
     if (snakeX < 0 || snakeX > cols * blockSize || snakeY < 0 || snakeY > cols * blockSize) {
         gameOver = true;
-        Swal.fire({
-  icon: 'error',
-  title: 'Oops...',
-  text: 'Something went wrong!',
-  footer: '<a href="">Why do I have this issue?</a>'
-})
+        alert("Game Over");
     }
     for (let i = 0; i < snakeBody.length; i++) {
         if (snakeX == snakeBody[i][0] && snakeY == snakeBody[i][1]) {
             gameOver: true;
-            Swal.fire({
-  icon: 'error',
-  title: 'Oops...',
-  text: 'Something went wrong!',
-  footer: '<a href="">Why do I have this issue?</a>'
-})
+                    alert("Game Over");
         }
     }
 }
